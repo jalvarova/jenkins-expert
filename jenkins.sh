@@ -1,8 +1,9 @@
 #! /bin/bash
 
 #permision file jenkins
-sudo chmod 777 -R jenkins && cd jenkins
+cd jenkins && mkdir jenkins_home && chmod 777 -R .
 
+sleep 3
 #create container jenkins with docker-compose
 docker-compose up -d 
 
