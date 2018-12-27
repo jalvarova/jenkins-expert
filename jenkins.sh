@@ -1,5 +1,6 @@
 #! /bin/bash
 
+#delete jenkins container
 #permision file jenkins
 cd jenkins && mkdir jenkins_home && chmod 777 -R .
 
