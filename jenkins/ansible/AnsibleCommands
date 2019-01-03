@@ -1,0 +1,21 @@
+########### Commnad CLI Ansible ####################
+
+ansible -m ping -i hosts test1  ==> Execute remote host
+
+ansible -i hosts -m ping all ==>  test all remote  host
+
+ansible-playbook -i hosts play.yml ==> run playbook in ansible
+
+ansible-playbook -i hosts play.yml -e "MSG=hola"==> run playbook in ansible with parameter eviroment
+
+
+##Use
+
+- Los archivos de la carpeta ansible tienen que estar en el archivo jenkins_home, excepto el Dockerfile y la carpeta web
+
+- El archivo put.sh y people.txt tiene que estar en el container de mysql o en el volumen creado para ejecutar el shell de insert en la tabla,
+  antes de ello crear la base de datos people, la tabla registro para el ejemplo indicado y los campos requeridos en el script.
+
+- instalar ansiblecli en el contenedor de jenkins o modifica la imagen para agregar ese comando
+
+- Usar los job que estan comprimidos en job.zip para probar los ejemplos con ansible

@@ -1,0 +1,13 @@
+- hosts: test1
+  tasks:
+
+    - debug:
+        var: MSG
+        
+    - debug:
+        msg: "Yo no me ejecuto"
+      tags: no-exec
+
+    - debug:
+        msg: "Yo si me ejecuto nenas"
+      tags: si-exec
