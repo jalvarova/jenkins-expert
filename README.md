@@ -60,9 +60,11 @@ NOTES:
 
 4. Configure security realm and authorization strategy
 
-5. Use Jenkins Configuration as Code by specifying configScripts in your values.yaml file, see documentation: http:///configuration-as-code and examples: https://
+5. Use Jenkins Configuration as Code by specifying configScripts in your values.yaml file, see documentation: 
  
-[Repository](github.com/jenkinsci/configuration-as-code-plugin/tree/master/demos)
+[IAAS](http:///configuration-as-code)
+ 
+[Repository](https://github.com/jenkinsci/configuration-as-code-plugin/tree/master/demos)
 
 
 For more information on running Jenkins on Kubernetes, visit:
