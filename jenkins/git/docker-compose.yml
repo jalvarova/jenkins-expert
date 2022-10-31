@@ -4,7 +4,7 @@ services:
     container_name: jenkins
     image: jenkins-ansible
     build:
-      context: ansible     
+      context: jenkins-ansible     
     ports:
       - "8080:8080"
     volumes:
@@ -17,7 +17,7 @@ services:
     build:
       context: centos7
     volumes:
-      - $PWD/aws/aws-s3.sh:/tmp/script.sh
+      - $PWD/aws-s3.sh:/tmp/script.sh
     networks:
       - net
   db_host:
@@ -33,14 +33,14 @@ services:
     container_name: web
     image: ansible-web
     build:
-      context: ansible/web
+      context: jenkins-ansible/web
     ports:
       - "8888:80"
     networks:
       - net
   git:
     container_name: git-server
-    hostname: gitlab.example.cogit@github.com:jalvarova/jenkins-expert.git
+    hostname: gitlab.example.com
     ports:
       - "443:443"
       - "80:80"

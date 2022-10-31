@@ -7,3 +7,5 @@
 *.rar
 *.tar.bz2
 /jenkins/jenkins_home/*
+db*
+*.csv
