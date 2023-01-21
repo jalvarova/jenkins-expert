@@ -62,7 +62,7 @@ NOTES:
 
 5. Use Jenkins Configuration as Code by specifying configScripts in your values.yaml file, see documentation: 
  
-[IAAS](http:///configuration-as-code)
+[IAAC](http:///configuration-as-code)
  
 [Repository](https://github.com/jenkinsci/configuration-as-code-plugin/tree/master/demos)
 
